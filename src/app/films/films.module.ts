@@ -6,6 +6,7 @@ import { FilmsComponent } from './films.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card'
 import {MatGridListModule} from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FilmsRoutingModule,
     HttpClientModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatButtonModule
     
   ],
   exports:[
