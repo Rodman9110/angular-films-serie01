@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatListModule,
     RouterModule
+    
   ],
   exports: [NavBarComponent]
 })

@@ -1,0 +1,57 @@
+
+
+
+<!-- <div fxFlex fxLayout="column">
+        <div fxLayout="row wrap">
+          <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
+            *ngFor="let film of films" style="padding: 5px;">
+            <mat-card>
+              <img mat-card-image src="assets/img/peli.png" alt="{{film.name}}">
+              <mat-card-title>
+                 {{film.name}}
+              </mat-card-title>
+              <mat-card-content>
+                    <p>
+                      {{film.description}}
+                    </p>
+              </mat-card-content>
+              <mat-card-footer>
+                <a href="" target="_blank" fxFlex mat-flat-button color="primary">
+                  Details
+                </a> 
+              </mat-card-footer>
+            </mat-card>
+          </div>
+         </div>
+      </div> -->
+      
+      
+
+
+      <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile *ngFor="let film of films">
+                    <div fxFlex fxLayout="column">
+                            <div fxLayout="row wrap">
+                              <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" 
+                                 style="padding: 5px;">
+                                <mat-card>
+                                  <img mat-card-image src="assets/img/kings.png" alt="{{film.name}}">
+                                  <mat-card-title>
+                                     {{film.name}}
+                                  </mat-card-title>
+                                  <mat-card-content>
+                                        <p>
+                                          {{film.description}}
+                                        </p>
+                                  </mat-card-content>
+                                  <mat-card-footer>
+                                    <a href="" target="_blank" fxFlex mat-flat-button color="primary">
+                                      Details
+                                    </a> 
+                                  </mat-card-footer>
+                                </mat-card>
+                              </div>
+                             </div>
+                          </div>                  
+            </mat-grid-tile>           
+          </mat-grid-list>      
