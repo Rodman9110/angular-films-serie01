@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card'
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { MatButtonModule } from '@angular/material/button';
     HttpClientModule,
     MatCardModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
+    
     
   ],
   exports:[

@@ -11,6 +11,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./films/films.module').then(m => m.FilmsModule)
   },
+  {
+    path: 'foro',
+    loadChildren: () =>
+      import('./foro/foro.module').then(m => m.ForoModule)
+  },
 
  
 ];

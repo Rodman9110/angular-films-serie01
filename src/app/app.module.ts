@@ -12,6 +12,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { FilmsModule } from './films/films.module';
+import { ForoComponent } from './foro/foro.component';
+import { ForoModule } from './foro/foro.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FilmsModule } from './films/films.module';
     BrowserAnimationsModule,
     LayoutModule,
     LayoutFilmsSeriesTV,
-    FilmsModule
+    FilmsModule,
+    ForoModule
+    
     
   ],
   providers: [],
