@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { FilmsModule } from './films/films.module';
 import { ForoComponent } from './foro/foro.component';
 import { ForoModule } from './foro/foro.module';
+import { SeriesModule } from './series/series.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ForoModule } from './foro/foro.module';
     LayoutModule,
     LayoutFilmsSeriesTV,
     FilmsModule,
-    ForoModule
+    ForoModule,
+    SeriesModule
     
     
   ],

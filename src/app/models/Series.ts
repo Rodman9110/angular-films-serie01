@@ -1,6 +1,6 @@
 import { DecimalPipe } from '@angular/common';
 
-export class Films{
+export class Series{
     constructor(
     public  id: number,
 	public name: string,
@@ -8,6 +8,8 @@ export class Films{
 	public description: string,
 	public premiere: string,
 	public classification: string,
+	public episode: number,
+	public season: number,
 	public poster_series: string
         
     ){}
