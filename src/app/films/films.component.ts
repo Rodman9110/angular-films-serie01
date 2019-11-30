@@ -10,6 +10,7 @@ import { Films } from '../models/Films';
 export class FilmsComponent implements OnInit {
 
   films:Films[];
+  film:Films;
   constructor(private filmsService: FilmsService) { }
 
   ngOnInit() {
@@ -22,5 +23,12 @@ export class FilmsComponent implements OnInit {
       this.films=data; 
       console.log(data);     
     })
+  }
+  getFindId(){
+    let id=localStorage.getItem("id");
+    this.filmsService.getFilmId(+id)
+    .subscribe(data =>{
+        this.film=data;
+      })
   }
 }
