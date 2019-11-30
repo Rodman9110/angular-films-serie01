@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FilmsService } from '../services/films.service';
 import { Films } from '../models/Films';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-films',
@@ -11,7 +12,8 @@ export class FilmsComponent implements OnInit {
 
   films:Films[];
   film:Films;
-  constructor(private filmsService: FilmsService) { }
+  @Input() items: any[] = [];
+  constructor(private filmsService: FilmsService,private router: Router) {    }
 
   ngOnInit() {
      this.getAllFilms();
@@ -31,4 +33,15 @@ export class FilmsComponent implements OnInit {
         this.film=data;
       })
   }
+  getFilm( item: any ){
+    console.log(item);
+    let filmId;
+    if (item.type === 'film') {
+      filmId = item.id;       
+    } else {
+      
+    }
+    this.router.navigate(['/film',filmId])
+  }
+
 }
