@@ -36,11 +36,17 @@ export class FilmsComponent implements OnInit {
   getFilm( item: any ){
     console.log(item);
     let filmId;
-    if (item.type === 'film') {
-      filmId = item.id;       
-    } else {
-      
-    }
+
+    filmId = item.id;
+  
+    // if (item.type === 'film') {
+
+    //   filmId = item.id;
+             
+    // } else {
+    //   console.log("no pasa por getFilm compnente");
+    //   filmId = item.films[0].id;     
+    // }
     this.router.navigate(['/film',filmId])
   }
 

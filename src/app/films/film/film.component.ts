@@ -13,7 +13,7 @@ export class FilmComponent implements OnInit {
   film;
   constructor(private filmServices: FilmsService, private route: ActivatedRoute,) {
      
-   // this.getFilm();
+   this.getFilm();
   }
 
   getFilm(){
@@ -21,9 +21,7 @@ export class FilmComponent implements OnInit {
      this.filmServices.getFilmId(this.id).subscribe(
        date => this.film = date  
      )
-
   }
-
   ngOnInit() {
   }
 
