@@ -3,7 +3,7 @@ export class Comment{
     public  id: number,
 	public name: string,
     public text: string,
-    public date_comment,
+    public date_comment:string,
         
     ){}
 }
